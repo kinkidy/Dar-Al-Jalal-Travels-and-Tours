@@ -57,20 +57,18 @@
             </div>
             <div id="navbar">
                 <div class="logo navbar-brand">
-                    <!-- <img src="./images/logo.png" width="65px" height="55px"> -->
-                    <a class="navbar-brand" href="index.html"><h2>Dar-Al-Jalal Travels & Tours</h2></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="https://res.cloudinary.com/kinkidy/image/upload/v1593367049/daj/DAR.png"/></a>
                 </div>
                 <div class="menu collapse navbar-collapse">
-                    <a href="../index.html">HOME</a>
-                    <a href="./visa.html">Visa</a>
-                    <a href="../hotel/hotel.html">Hotel</a>
-                    <a href="../about/about.html">About us</a>
-                    <a href="../find_us/find_us.html">CONTACT US</a>
+                    <ul>
+                        <li><a  class="active"href="../index.html">HOME</a></li>
+                        <li><a href="./visa.html">Visa</a></li>
+                        <li><a href="../hotel/hotel.html">Hotel</a></li>
+                        <li><a href="../about/about.html">About</a></li>
+                        <li><a href="../find_us/find_us.html">CONTACT</a></li>
+                      </ul>
                 </div>
-            </div>
+            </div>s
         </nav>
 
         <!--Middle content-->
@@ -109,129 +107,87 @@
                     Let's Know You
                     </div>
                     <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="firstName">First Name</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="firstName"
-                        placeholder=" "
-                        formControlName="firstName"
-                        />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="lastName">Last Name</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="lastName"
-                        placeholder=" "
-                        formControlName="lastName"
-                        />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="phoneNumber"
-                        formControlName="phoneNumber"
-                        placeholder=" "
-                        />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email Address</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="email"
-                        placeholder=" "
-                        formControlName="email"
-                        />
-                    </div>
-                    </div>
-                    <div class="form_row_header">
-                    Get Your Perfect Hotel
-                    </div>
-                    <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="seat_class">Country</label>
-                        <select
-                        id="seat_class"
-                        class="form-control"
-                        formControlName="country"
-                        >
-                        <option selected>Choose...</option>
-                        <option>Nigeria</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="city">City</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="city"
-                        placeholder=" "
-                        formControlName="city"
-                        />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="roomType">Room Type</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="roomType"
-                        placeholder=" "
-                        formControlName="type"
-                        />
-                    </div>
-            
-                    <div class="form-group col-md-6">
-                        <label for="passengers">No. Of Persons</label>
-                        <input
-                        type="text"
-                        class="form-control"
-                        id="passengers"
-                        placeholder=" "
-                        formControlName="no_of_people"
-                        />
-                    </div>
-            
-                    <div class="form-group col-md-6">
-                        <label for="checkIn">Check in</label>
-                        <!-- <ejs-datepicker
-                        strictMode="true"
-                        id="checkIn"
-                        format="yyyy-MM-dd"
-                        placeholder="2019-11-02"
-                        formControlName="checkIn"
-                        ></ejs-datepicker> -->
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="checkOut">Check Out</label>
-                        <ejs-datepicker
-                        strictMode="true"
-                        id="checkOut"
-                        format="yyyy-MM-dd"
-                        placeholder="2019-11-02"
-                        formControlName="checkOut"
-                        ></ejs-datepicker>
-                    </div>
-                    </div>
-            
-                    <div class="form_actions">
-                    <button
-                        type="submit"
-                        class="default_button"
-                    >
-                        Submit      
-                        <i
-                        class="fa fa-chevron-circle-right animated slideIn"
-                        *ngIf="!isBooking"
-                        ></i>
-                        <span class="sr-only">Loading...</span>
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="firstName"
+                            placeholder=" "
+                            formControlName="firstName"
+                            />
                         </div>
-                    </button>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="lastName"
+                            placeholder=" "
+                            formControlName="lastName"
+                            />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="phoneNumber"
+                            formControlName="phoneNumber"
+                            placeholder=" "
+                            />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email Address</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="email"
+                            placeholder=" "
+                            formControlName="email"
+                            />
+                        </div>
+                        </div>
+                        <div class="form_row_header">
+                        Get Your Perfect Hotel
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="seat_class">Country</label>
+                            <select
+                            id="seat_class"
+                            class="form-control"
+                            formControlName="country"
+                            >
+                            <option selected>Choose...</option>
+                            <option></option>
+                            </select>
+                        </div>           
+                        <div class="form-group col-md-6">
+                            <label for="passengers">Duration</label>
+                            <input
+                            type="text"
+                            class="form-control"
+                            id="passengers"
+                            placeholder=" "
+                            formControlName="no_of_people"
+                            />
+                        </div>
+                        </div>
+                
+                        <div class="form_actions">
+                        <button
+                            type="submit"
+                            class="default_button"
+                        >
+                            Submit      
+                            <i
+                            class="fa fa-chevron-circle-right animated slideIn"
+                            *ngIf="!isBooking"
+                            ></i>
+                            <span class="sr-only">Loading...</span>
+                            </div>
+                        </button>
                     </div>
                     
                 </form>
@@ -259,28 +215,28 @@
             <div id="exampleSlider">
                 <div class="MS-content">
                     <div class="item">
-                        <img src="../images/Delta-Logo.jpg" >
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312965/daj/Delta-Logo.jpg" >
                     </div>
                     <div class="item">
-                        <img src="../images/Malaysia-airways-logo.jpg">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312969/daj/Malaysia-airways-logo.jpg">
                     </div>
                     <div class="item">
-                        <img src="../images/travelstart.png">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312974/daj/travelstart.png">
                     </div>
                     <div class="item">
-                        <img src="../images/british-airways-logo.jpg">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312962/daj/british-airways-logo.jpg">
                     </div>
                     <div class="item">
-                        <img src="../images/Malaysia-airways-logo.jpg">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312969/daj/Malaysia-airways-logo.jpg">
                     </div>
                     <div class="item">
-                        <img src="../images/Delta-Logo.jpg">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312965/daj/Delta-Logo.jpg">
                     </div>
                     <div class="item">
-                        <img src="../images/travelstart.png">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312974/daj/travelstart.png">
                     </div>
                     <div class="item">
-                        <img src="../images/british-airways-logo.jpg">
+                        <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312962/daj/british-airways-logo.jpg">
                     </div>
                 </div>
                 <div class="MS-controls">

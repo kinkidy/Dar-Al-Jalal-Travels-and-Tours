@@ -1,18 +1,25 @@
 @import url(https://weloveiconfonts.com/api/?family=iconicstroke|entypo|brandico|maki|zocial);
 
-
 html,
 body {
   width: auto;
   margin: 0;
   padding: 0;
   overflow-x: hidden; 
-  font-family: lato, sans-serif;
+  /* font-family: lato, sans-serif; */
   line-height: 1.5em;;
 }
 a {
   text-decoration: none;
   color: none;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+a:active {
+  text-decoration: none !important;
+  color: #ffffff;
 }
 h2, h3, h4{
   font-size: 24;
@@ -20,12 +27,36 @@ h2, h3, h4{
   letter-spacing: 1px;
 }
 * {
-    margin: auto;
+  margin: auto;
+}
+#container {
+  font-size: 14px;
+  width: 100%;
+}
+#social-info {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: rgba(255, 255, 255);
+  width: 100%;  
+  justify-content: space-between;
+}
+.social-info-basic, .social-info-icon  {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 !important;
+  padding: 0 10px 0 0 ;
+  color: #1b1b1b;
+}
+.social-info-basic ul:first-of-type{
+padding-right: 10px;
 }
 ul{
   list-style: none;
   display:flex;
   flex-flow: row nowrap;
+}
+a:hover {
+  text-decoration: none;
 }
 .zocial {
   padding-right: 10px;
@@ -54,51 +85,20 @@ ul{
   font-family: 'iconicstroke', sans-serif;
   padding: 0 10px;
 }
+ ul{
+  margin-bottom: 0 !important;
+}
 ul a {
   padding-left: 10px;
-}
-#container {
-  font-size: 14px;
-  width: 100%;
-}
-#content {
-  background: url('../images/img3.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 13rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-#social-info {
-  display: flex;
-  flex-flow: row nowrap;
-  background-color: rgba(255, 255, 255);
-  width: 100%;  
-  justify-content: space-between;
-}
-.social-info-basic, .social-info-icon  {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 0 !important;
-  padding: 10px 10px 0 10px ;
-  color: #1b1b1b;
-}
-.social-info-basic ul:first-of-type{
-  padding-right: 10px;
 }
 .navbar {
   display: inline-block !important;
   padding: 0 !important;
 }
-.navbar-expand-lg .navbar-collapse {
-  justify-content: right !important ;
-}
-.menu a {
-  margin: 0;
-  padding: 3rem;
-}
+#navbar a:hover {
+  text-decoration: none !important;
+  color: #4e575c;
+} 
 #navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -108,7 +108,7 @@ ul a {
   background-color:  rgba(0, 0, 255);
 }
 #navbar a {
-  color:  #d0d2d3 !important;
+  color:  #ffffff !important;
 }
 .logo, .menu  {
   display: flex;
@@ -118,12 +118,42 @@ ul a {
 .logo {
   padding-left: 50px;
 }
+.logo img {
+  height: 55px;
+}
 .menu {
   padding-right: 50px;
-  font-weight: 600;
+  font-weight: 600; 
+  justify-content: right !important ;
 }
-.menu a{
-  padding: 0 10px;
+/* .menu a{
+  text-align: center;
+  height: 100%;
+  width: 100px
+} */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.menu li a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #03035e;
+}
+.menu a:active {
+  background-color: #03035e;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 #top-info {
   width: 100%;

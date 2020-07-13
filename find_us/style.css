@@ -13,6 +13,14 @@ a {
   text-decoration: none;
   color: none;
 }
+a:hover {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+a:active {
+  text-decoration: none !important;
+  color: #ffffff;
+}
 h2, h3, h4{
   font-size: 24;
   font-weight: 600;
@@ -25,6 +33,7 @@ ul{
   list-style: none;
   display:flex;
   flex-flow: row nowrap;
+  margin-bottom: 0 !important;
 }
 .zocial {
   padding-right: 10px;
@@ -42,6 +51,11 @@ ul{
 }
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
+}
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+  font-size: 5rem;
+  color: #48c2f7;
 }
 /* iconicfill */
 [class*="maki-"]:before {
@@ -73,16 +87,11 @@ ul a {
   margin: 0 !important;
   font-size: 12px !important;
   font-weight: 600 !important;
-  padding: 10px 10px 0 10px ;
+  padding: 0 10px 0 0 ;
   color: #1b1b1b;
 }
 .social-info-basic ul:first-of-type{
   padding-right: 10px;
-}
-ul{
-  list-style: none;
-  display:flex;
-  flex-flow: row nowrap;
 }
 .navbar {
   display: inline-block !important;
@@ -92,10 +101,6 @@ ul{
   justify-content: right !important ;
   flex-grow: 0;
 }
-.menu a {
-  margin: 0;
-  padding: 3rem;
-}
 #navbar {
    display: flex;
    flex-flow: row nowrap;
@@ -104,11 +109,9 @@ ul{
    width:100%;
    background-color:  rgba(0, 0, 255);
 }
-
 #navbar a {
   color:  #d0d2d3 !important;
 }
-
 .logo, .menu  {
   display: flex;
   flex-flow: row nowrap;
@@ -117,16 +120,62 @@ ul{
 .logo {
   padding-left: 50px;
 }
-
 .menu {
   padding-right: 50px;
   font-weight: 600;
 }
-
 .menu a{
   padding: 0 10px;
 }
-
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.menu li a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #03035e;
+}
+.menu a:active {
+  background-color: #03035e;
+}
+.logo, .menu  {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 !important;
+}
+.logo {
+  padding-left: 50px;
+}
+.logo img {
+  height: 55px;
+}
+.menu {
+  justify-content: right !important ;
+}
+.menu a {
+  margin: 0;
+  padding: 3rem;
+}
+.menu {
+  padding-right: 50px;
+  font-weight: 600;
+}
+.menu a{
+  padding: 0 10px;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
 #top-info {
   width: 100%;
   margin: 0;
