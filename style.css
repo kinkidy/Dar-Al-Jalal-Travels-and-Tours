@@ -1,5 +1,7 @@
 @import url(https://weloveiconfonts.com/api/?family=iconicstroke|entypo|brandico|maki|zocial);
-
+* {
+  margin: auto;
+}
 html,
 body {
   width: auto;
@@ -13,14 +15,20 @@ a {
   text-decoration: none;
   color: none;
 }
+a:hover {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+a:active {
+  text-decoration: none !important;
+  color: #ffffff;
+}
 h2, h3, h4{
   font-size: 24;
   font-weight: 600;
   letter-spacing: 1px;
 }
-* {
-  margin: auto;
-}
+
 #container {
   font-size: 14px;
   width: 100%;
@@ -36,7 +44,7 @@ h2, h3, h4{
   display: flex;
   flex-flow: row nowrap;
   margin: 0 !important;
-  padding: 10px 10px 0 10px ;
+  padding: 0 10px 0 0 ;
   color: #1b1b1b;
 }
 .social-info-basic ul:first-of-type{
@@ -46,6 +54,7 @@ ul{
   list-style: none;
   display:flex;
   flex-flow: row nowrap;
+  margin-bottom: 0 !important;
 }
 a:hover {
   text-decoration: none;
@@ -78,19 +87,17 @@ a:hover {
   padding: 0 10px;
 }
 ul a {
-  padding-left: 10px;
+  padding-left: 10px;  
+  margin-bottom: 0 !important;
 }
 .navbar {
   display: inline-block !important;
   padding: 0 !important;
 }
-.navbar-expand-lg .navbar-collapse {
-  justify-content: right !important ;
-}
-.menu a {
-  margin: 0;
-  padding: 3rem;
-}
+#navbar a:hover {
+  text-decoration: none !important;
+  color: #4e575c;
+} 
 #navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -100,10 +107,7 @@ ul a {
   background-color:  rgba(0, 0, 255);
 }
 #navbar a {
-  color:  #d0d2d3 !important;
-}
-#navbar a:hover{
-  text-decoration: none;
+  color:  #ffffff !important;
 }
 .logo, .menu  {
   display: flex;
@@ -113,12 +117,40 @@ ul a {
 .logo {
   padding-left: 50px;
 }
+.logo img {
+  height: 55px;
+}
 .menu {
   padding-right: 50px;
-  font-weight: 600;
+  font-weight: 600; 
+  justify-content: right !important ;
 }
-.menu a{
-  padding: 0 10px;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.menu li a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #03035e;
+}
+.menu a:active {
+  background-color: #03035e;
+}
+/* .menu a{
+  background-color: #03035e !important;
+} */
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 #top-info {
   width: 100%;
@@ -156,60 +188,58 @@ iframe {
   height: auto;
   background-color: rgb(250, 250, 250); 
   width: 100%;
-  /* padding-top: 30px; */
   margin-top: 40px;
-}
-.quicklinks {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 50px 0 150px 0;
 }
 .quicklinks button {
   width: auto;
-  margin: 20px 0;
-  box-shadow: none;
-  border-radius: 6px;
-  font-weight: 700;
+  margin: 30px 0 0;
+  font-weight: 500;
 }
 .quicklink {
-  width: 25%;
-  box-shadow: 5px  4px 15px rgba(0,0,0,.2);
-  border-radius: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 500px;
+  padding:30px 80px;
+  color: #6f7c83;
 }
 .quicklink-body {
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 40px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
 }
 .quicklink a {
   color: #fafafa;
 }
 .visa {
-  background: url('/images/11.jpg');
-  background-position: center;
+  background: url('https://res.cloudinary.com/kinkidy/image/upload/v1592770665/daj/visa.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
 }
 .ticket {
-  background: url('/images/2c.jpg');
-  background-position: center;
+  background: url('https://res.cloudinary.com/kinkidy/image/upload/v1592780722/daj/Optimized-2c.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
 }
 .get_in_touch {
-  background: url('/images/5.jpg');
-  background-position: center;
+  background: url('https://res.cloudinary.com/kinkidy/image/upload/v1592770664/daj/contact.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
 }
 .content-static {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin-bottom: 150px;
 }
 .content-static-img {
-  background: url(./images/img3.png);
+  background: url("https://res.cloudinary.com/kinkidy/image/upload/v1591312973/daj/img3.png");
   /* z-index: 1; */
   background-position: center;
   background-repeat: no-repeat;
@@ -244,7 +274,7 @@ iframe {
   background-color: #0000fff1;
   border-radius: 5px 40px ;
   padding: 100px 0;
-  margin-top: 150px ;
+  margin-top: 100px ;
   margin-bottom: 150px;
   width: 95%;
   text-align: center;

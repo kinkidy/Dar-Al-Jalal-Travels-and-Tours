@@ -14,6 +14,14 @@ a {
   text-decoration: none;
   color: none;
 }
+a:hover {
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+a:active {
+  text-decoration: none !important;
+  color: #ffffff;
+}
 h2, h3, h4{
   font-size: 24;
   font-weight: 600;
@@ -46,6 +54,16 @@ h2, h3, h4{
   font-family: 'iconicstroke', sans-serif;
   padding: 0 10px;
 }
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+  font-size: 5rem;
+  color: #48c2f7;
+}
+[class*="typicons-"]:before {
+  font-family: 'typicons', sans-serif;
+  font-size: 5rem;
+  color: rgba(255, 99, 71, 0.753);
+}
 ul a {
   padding-left: 10px;
 }
@@ -64,7 +82,7 @@ ul a {
   display: flex;
   flex-flow: row nowrap;
   margin: 0 !important;
-  padding: 10px 10px 0 10px ;
+  padding: 0 10px 0 0 ;
   color: #1b1b1b;
 }
 .social-info-basic ul:first-of-type{
@@ -74,6 +92,7 @@ ul{
   list-style: none;
   display:flex;
   flex-flow: row nowrap;
+  margin-bottom: 0 !important;
 }
 .zocial {
     padding-right: 10px;
@@ -86,10 +105,6 @@ ul{
   justify-content: right !important ;
   flex-grow: 0;
 }
-.menu a {
-  margin: 0;
-  padding: 3rem;
-}
 #navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -101,7 +116,6 @@ ul{
 #navbar a {
   color:  #d0d2d3 !important;
 }
-
 .logo, .menu  {
   display: flex;
   flex-flow: row nowrap;
@@ -110,16 +124,47 @@ ul{
 .logo {
   padding-left: 50px;
 }
-
+.logo img {
+  height: 55px;
+}
+.menu {
+  justify-content: right !important ;
+}
+.menu a {
+  margin: 0;
+  padding: 3rem;
+}
 .menu {
   padding-right: 50px;
   font-weight: 600;
 }
-
 .menu a{
   padding: 0 10px;
 }
-
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.menu li a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #03035e;
+}
+.menu a:active {
+  background-color: #03035e;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
 #top-info {
   width: 100%;
   margin: 0;
@@ -130,26 +175,22 @@ ul{
     width: 45%;
     padding: 100px 0 100px 260px; 
 }
-
 #top-info-content  h2{
-    font-size: 25px;
-    align-self: auto;
+  font-size: 25px;
+  align-self: auto;
 }
-
 #top-info-content .buttons {
     margin-top: 40px;
 }
-
 button {
-    padding: 15px;
-    width: 25%;
-    border-radius: 5px;
-    border: none;
-    background-color: #48c2f7;
-    box-shadow: 2px 2px 2px 1px rgba(148, 147, 147, 0.267);
-    margin-right: 20px;
+  padding: 15px;
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  background-color: #48c2f7;
+  box-shadow: 2px 2px 2px 1px rgba(148, 147, 147, 0.267);
+  margin-right: 20px;
 }
-
 /* content starts here */
 .banner-img {
   background-image: url('./images/fly..jpg');
@@ -174,12 +215,10 @@ button {
   box-shadow: none;
   border: red;
 }
-
 .banner {
   text-align: center;
   /* padding-top: 10%; */
 }
- 
 .button {
   font-family: "Open Sans", sans-serif;
   background-color: #B45;
@@ -192,7 +231,7 @@ button {
 }
 #content {
   text-align: center;
-  background-image: url('../images/about.jpg');
+  background-image: url('https://res.cloudinary.com/kinkidy/image/upload/v1591312961/daj/about.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

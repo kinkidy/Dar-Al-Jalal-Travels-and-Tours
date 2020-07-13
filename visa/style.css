@@ -1,6 +1,7 @@
 @import url(https://weloveiconfonts.com/api/?family=iconicstroke|entypo|brandico|maki|zocial);
-
-
+* {
+  margin: auto;
+}
 html,
 body {
   width: auto;
@@ -14,14 +15,20 @@ a {
   text-decoration: none;
   color: none;
 }
+a:hover {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+a:active {
+  text-decoration: none !important;
+  color: #ffffff;
+}
 h2, h3, h4{
   font-size: 24;
   font-weight: 600;
   letter-spacing: 1px;
 }
-* {
-  margin: auto;
-}
+
 .zocial {
   padding-right: 10px;
 }
@@ -54,18 +61,19 @@ ul a {
 }
 a:hover {
   text-decoration: none;
-}
+}  
 ul{
   list-style: none;
   display:flex;
   flex-flow: row nowrap;
+  margin-bottom: 0 !important;
 }
 #container {
   font-size: 14px;
   width: 100%;
 }
 #content {
-  background: url('../images/img3.png');
+  background: url('https://res.cloudinary.com/kinkidy/image/upload/v1591312973/daj/img3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +93,7 @@ ul{
   display: flex;
   flex-flow: row nowrap;
   margin: 0 !important;
-  padding: 10px 10px 0 10px ;
+  padding: 0 10px 0 0 ;
   color: #1b1b1b;
 }
 .social-info-basic ul:first-of-type{
@@ -96,13 +104,7 @@ ul{
   display: inline-block !important;
   padding: 0 !important;
 }
-.navbar-expand-lg .navbar-collapse {
-  justify-content: right !important ;
-}
-.menu a {
-  margin: 0;
-  padding: 3rem;
-}
+
 #navbar {
   display: flex;
   flex-flow: row nowrap;
@@ -111,11 +113,9 @@ ul{
   width:100%;
   background-color:  rgba(0, 0, 255);
 }
-
 #navbar a {
   color:  #d0d2d3 !important;
 }
-
 .logo, .menu  {
   display: flex;
   flex-flow: row nowrap;
@@ -124,16 +124,38 @@ ul{
 .logo {
   padding-left: 50px;
 }
-
+.logo img {
+  height: 55px;
+}
 .menu {
   padding-right: 50px;
   font-weight: 600;
+  justify-content: right !important ;
 }
-
-.menu a{
-  padding: 0 10px;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
 }
-
+.menu li a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 26px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+  background-color: #03035e;
+}
+.menu a:active {
+  background-color: #03035e;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
 #top-info {
   width: 100%;
   margin: 0;
