@@ -126,11 +126,6 @@ ul a {
   font-weight: 600; 
   justify-content: right !important ;
 }
-/* .menu a{
-  text-align: center;
-  height: 100%;
-  width: 100px
-} */
 .menu ul {
   list-style-type: none;
   margin: 0;
@@ -143,7 +138,7 @@ ul a {
   display: block;
   color: white;
   text-align: center;
-  padding: 26px 16px;
+  padding: 28px 16px;
   text-decoration: none;
 }
 .menu a:hover {
@@ -182,32 +177,41 @@ button {
 }
 
 /* content starts here */
+#content {
+  text-align: center;
+  background-color: #ffffff;
+  padding-top: 12rem;
+}
 .hotel_content {
-  padding: 0 0 0 10rem !important ;
-  margin: 0 2rem !important;
+  margin: 0 auto !important;
   color: #657279;
+  text-align: center;
+  width: 60%;
+}
+.hotel_content h1 {
+  margin-bottom: 1.5rem;
 }
 .hotel_content p {
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 2;
 }
 /*form styling*/
 form {
   padding-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  text-align: left;
+  border: 2px solid #e0dfdf;
 }
 .flight_form {
   background: #ffffff;
-  border-radius: 20px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border: none;
-  padding: 0 0 5rem 0 !important;
-  margin-right: 12rem !important;
+  padding: 0 !important;
   width: 75%;
   box-shadow: rgb(46, 46, 46);
   color: #657279;
   }
- 
 .form_header_section {
   display: flex;
   min-width: 60%;
@@ -217,30 +221,25 @@ form {
   padding-top: 5rem;
 }
 .form_row_header {
-  font-family: "Montserrat", serif;
   font-size: 0.9rem;
   font-weight: 600;
   margin: 2rem 0;
   padding: 0 5rem;
 }
 .flight_form .form_header {
-  font-family: "Montserrat", serif;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.9rem;
 }
 .flight_form .form_sub_header {
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
 }
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
 }
 .form-control {
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
 }
 .form_actions {
@@ -272,7 +271,6 @@ form button {
   background-color: #0b0146;
   color: #fdffd6;
   text-align: center;
-  font-family: "Montserrat", serif;
   font-size: 0.6rem;
   margin-bottom: 5rem;
 }
@@ -285,7 +283,6 @@ form button {
   padding: 10px ;
 }
 .bottom_header .form_header {
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -293,7 +290,6 @@ form button {
   color: #ffffff8a;
   min-width: 40%;
   text-align: center;
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;

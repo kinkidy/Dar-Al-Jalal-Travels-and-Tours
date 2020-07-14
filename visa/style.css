@@ -73,14 +73,12 @@ ul{
   width: 100%;
 }
 #content {
-  background: url('https://res.cloudinary.com/kinkidy/image/upload/v1591312973/daj/img3.png');
-  background-position: center;
+  /* background: url('https://res.cloudinary.com/kinkidy/image/upload/v1591312973/daj/img3.png'); */
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #fff;
   padding-top: 13rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
 }
 #social-info {
   display: flex;
@@ -114,7 +112,7 @@ ul{
   background-color:  rgba(0, 0, 255);
 }
 #navbar a {
-  color:  #d0d2d3 !important;
+  color:  #ffffff !important;
 }
 .logo, .menu  {
   display: flex;
@@ -144,7 +142,7 @@ ul{
   display: block;
   color: white;
   text-align: center;
-  padding: 26px 16px;
+  padding: 28px 16px;
   text-decoration: none;
 }
 .menu a:hover {
@@ -161,46 +159,47 @@ ul{
   margin: 0;
   padding-top: 0;
 }
-
 #top-info-content {
-    width: 45%;
-    padding: 100px 0 100px 260px; 
+  width: 45%;
+  padding: 100px 0 100px 260px; 
 }
-
 #top-info-content  h2{
-    font-size: 25px;
-    align-self: auto;
+  font-size: 25px;
+  align-self: auto;
 }
-
 #top-info-content .buttons {
     margin-top: 40px;
 }
-
 button {
-    padding: 15px;
-    width: 25%;
-    border-radius: 5px;
-    border: none;
-    background-color: #48c2f7;
-    box-shadow: 2px 2px 2px 1px rgba(148, 147, 147, 0.267);
-    margin-right: 20px;
+  padding: 15px;
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  background-color: #48c2f7;
+  box-shadow: 2px 2px 2px 1px rgba(148, 147, 147, 0.267);
+  margin-right: 20px;
 }
-
 /* content starts here */
 .visa_content {
-  padding: 0 0 0 10rem !important ;
-  margin: 0 2rem !important;
+  margin: 0 auto !important;
   color: #657279;
+  text-align: center;
+  width: 60%;
+}
+.visa_content h1 {
+  margin-bottom: 1.5rem;
 }
 .visa_content p {
-  font-size: 16px;;
+  font-size: 20px;
+  line-height: 2;
 }
 /*form styling*/
 form {
   padding-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  text-align: left;
+  border: 2px solid #e0dfdf;
 }
-
 .flight_form {
   background: #ffffff;
   border-radius: 20px;
@@ -208,11 +207,10 @@ form {
   border-bottom-right-radius: 0;
   border: none;
   padding: 0 !important;
-  margin-right: 5rem !important;
+  box-shadow: rgb(46, 46, 46);
   width: 75%;
   color: #657279;
 }
-
 .form_header_section {
   display: flex;
   min-width: 60%;
@@ -221,34 +219,26 @@ form {
   align-items: center;
   padding-top: 5rem;
 }
-
 .form_row_header {
-  font-family: "Montserrat", serif;
   font-size: 0.9rem;
   font-weight: 600;
   margin: 2rem 0;
   padding: 0 5rem;
 }
-
 .flight_form .form_header {
-  font-family: "Montserrat", serif;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.9rem;
 }
 .flight_form .form_sub_header {
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
 }
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
 }
-
 .form-control {
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
 }
 .form_actions {
@@ -281,7 +271,6 @@ form button {
   background-color: #0b0146;
   color: #fdffd6;
   text-align: center;
-  font-family: "Montserrat", serif;
   font-size: 0.6rem;
   margin-bottom: 5rem;
 }
@@ -290,11 +279,12 @@ form button {
 }
 .bottom_header {
   text-align: center;
-  background-color:#5cd9c8;
   padding: 10px ;
+  margin: 2.5rem auto;
+  width: 60%;
+  color: #657279;
 }
 .bottom_header .form_header {
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -302,7 +292,6 @@ form button {
   color: #ffffff8a;
   min-width: 40%;
   text-align: center;
-  font-family: "Montserrat", serif;
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
