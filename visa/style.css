@@ -97,22 +97,31 @@ ul{
 .social-info-basic ul:first-of-type{
   padding-right: 10px;
 }
-
-.navbar {
-  display: inline-block !important;
-  padding: 0 !important;
-}
-
 #navbar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between; 
-  padding:0;
-  width:100%;
   background-color:  rgba(0, 0, 255);
 }
-#navbar a {
-  color:  #ffffff !important;
+.navbar {
+  padding: 0 !important;
+}
+.navbar button {
+  width: 10%;
+  border: none;
+  background-color:transparent;
+  margin-right: 1rem;
+}
+.navbar-toggler {
+  font-size: 1rem !important;
+}
+.navbar-toggler-icon {
+  height: .15rem !important;
+  width: 100% !important;
+  background-color: #eeeeee !important;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-expand-lg {
+  justify-content: space-between !important;
 }
 .logo, .menu  {
   display: flex;
@@ -366,101 +375,6 @@ input {
 .testimony {
   padding: 20px 0;
 }
-.partners {
-  width: 95%;
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
-}
- #exampleSlider {
-    position: relative;
-  }
-  @media (max-width: 767px) {
-    #exampleSlider {
-      border-color: transparent;
-    }
-  }
-  #exampleSlider .MS-content {
-    margin: 15px 5%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  @media (max-width: 767px) {
-    #exampleSlider .MS-content {
-      margin: 0;
-    }
-  }
-  #exampleSlider .MS-content .item {
-    display: inline-block;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    vertical-align: top;
-    border-right: none;
-    width: 20%;
-  }
-
-  .item img {
-    height: 80px;
-  }
-  
-  @media (max-width: 1200px) {
-    #exampleSlider .MS-content .item {
-      width: 25%;
-    }
-  }
-  @media (max-width: 992px) {
-    #exampleSlider .MS-content .item {
-      width: 33.3333%;
-    }
-  }
-  @media (max-width: 767px) {
-    #exampleSlider .MS-content .item {
-      width: 50%;
-    }
-  }
-  #exampleSlider .MS-content .item p {
-    font-size: 30px;
-    text-align: center;
-    line-height: 1;
-    vertical-align: middle;
-    margin: 0;
-    padding: 10px 0;
-  }
-  #exampleSlider .MS-controls button {
-    position: absolute;
-    border: none;
-    background:transparent;
-    font-size: 15px;
-    outline: 0;
-    width: 4%;
-    border-radius: 50%;
-    box-shadow: none;
-    top: 25px;
-  }
-  @media (max-width: 767px) {
-    #exampleSlider .MS-controls button {
-      display: none;
-    }
-  }
-  #exampleSlider .MS-controls button:hover {
-    cursor: pointer;
-  }
-  #exampleSlider .MS-controls .MS-left {
-    left: 10px;
-  }
-  @media (max-width: 992px) {
-    #exampleSlider .MS-controls .MS-left {
-      left: -2px;
-    }
-  }
-  #exampleSlider .MS-controls .MS-right {
-    right: 10px;
-  }
-  @media (max-width: 992px) {
-    #exampleSlider .MS-controls .MS-right {
-      right: -2px;
-    }
-  }
 .footer {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -483,4 +397,50 @@ input {
   border-top: 1px solid #e2e6e9;
   border-width: 60%;
   color:#657279;
+}
+
+/* Responsiveness  */
+/* Responsiveness  */
+@media screen and (max-width:450px) {
+  .mobile-quicklinks button {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width:550px) {
+  #content {
+    padding-top: 3rem;
+  }
+  .visa, .get_in_touch, .ticket {
+    height: 10rem;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .navbar-brand{
+    width: 80%;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #social-info a{
+    display: none;
+  }
+  .navbar-brand {
+    padding: .2rem 0 !important;
+  }
+  .logo img {
+    height: 3.4rem;
+  }
+  .visa_content{
+    width: 70%;
+  }
+  .newsletter input {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .newsletter button {
+    width: 100%;
+  }
 }

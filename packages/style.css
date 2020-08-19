@@ -65,6 +65,10 @@ ul{
 [class*="iconicstroke-"]:before {
   font-family: 'iconicstroke', sans-serif;
   padding: 0 10px;
+}ul{
+  list-style: none;
+  display:flex;
+  flex-flow: row nowrap;
 }
 ul a {
   padding-left: 10px;
@@ -92,33 +96,35 @@ ul a {
 .social-info-basic ul:first-of-type{
   padding-right: 10px;
 }
-ul{
-  list-style: none;
-  display:flex;
-  flex-flow: row nowrap;
+#navbar {
+  background-color:  rgba(0, 0, 255);
 }
 .navbar {
-  display: inline-block !important;
   padding: 0 !important;
 }
-.navbar-expand-lg .navbar-collapse {
-  justify-content: right !important ;
-  flex-grow: 0;
+.navbar button {
+  width: 10%;
+  border: none;
+  background-color:transparent;
+  margin-right: 1rem;
+}
+.navbar-toggler {
+  font-size: 1rem !important;
+}
+.navbar-toggler-icon {
+  height: .15rem !important;
+  width: 100% !important;
+  background-color: #eeeeee !important;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-expand-lg {
+  justify-content: space-between !important;
 }
 .menu a {
   margin: 0;
   padding: 3rem;
-}
-#navbar {
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: space-between; 
-   padding:0;
-   width:100%;
-   background-color:  rgba(0, 0, 255);
-}
-#navbar a {
-  color:  #f5f5f5 !important;
 }
 .logo, .menu  {
   display: flex;
@@ -130,6 +136,7 @@ ul{
 }
 .logo img {
     height: 55px;
+    width: 100%;
 }
 .menu {
   padding-right: 50px;
@@ -180,8 +187,8 @@ button {
     color: #929191;
 }
 .package-details p {
-    margin-top: 24px;
-    font-size: 1.11rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
     line-height: 34px;
 }
 .find_content_2 {
@@ -344,4 +351,33 @@ right: 10px;
     border-top: 1px solid #e2e6e9;
     border-width: 60%;
     color:#657279;
+}
+
+
+/* Responsiveness  */
+@media screen and (max-width:450px) {
+  .mobile-quicklinks button {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .visa, .get_in_touch, .ticket {
+    height: 10rem;
+  }
+  .navbar-brand{
+    width: 80%;
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #social-info a{
+    display: none;
+  }
+  .navbar-brand {
+    padding: .2rem 0 !important;
+  }
+  .logo img {
+    height: 3.4rem;
+  }
 }

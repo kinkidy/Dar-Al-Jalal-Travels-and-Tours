@@ -90,7 +90,7 @@ ul a {
   padding-left: 10px;  
   margin-bottom: 0 !important;
 }
-.navbar {
+/* .navbar {
   display: inline-block !important;
   padding: 0 !important;
 }
@@ -99,7 +99,7 @@ ul a {
   color: #4e575c;
 } 
 #navbar {
-  display: flex;
+  display: flex !important;
   flex-flow: row nowrap;
   justify-content: space-between; 
   padding:0;
@@ -108,6 +108,32 @@ ul a {
 }
 #navbar a {
   color:  #ffffff !important;
+} */
+#navbar {
+  background-color:  rgba(0, 0, 255);
+}
+.navbar {
+  padding: 0 !important;
+}
+.navbar button {
+  width: 10%;
+  border: none;
+  background-color:transparent;
+  margin-right: 1rem;
+}
+.navbar-toggler {
+  font-size: 1rem !important;
+}
+.navbar-toggler-icon {
+  height: .15rem !important;
+  width: 100% !important;
+  background-color: #eeeeee !important;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-expand-lg {
+  justify-content: space-between !important;
 }
 .logo, .menu  {
   display: flex;
@@ -119,6 +145,7 @@ ul a {
 }
 .logo img {
   height: 55px;
+  width: 100%;
 }
 .menu {
   padding-right: 50px;
@@ -178,8 +205,8 @@ button {
   margin-right: 20px;
 }
 .whitelabel {
-height:auto;
-margin-top: 8rem;
+  height:auto;
+  /* margin-top: 8rem; */
 }
 iframe {
   overflow: scroll;
@@ -198,10 +225,11 @@ iframe {
 .quicklink {
   display: flex;
   flex-flow: row nowrap;
-  height: 500px;
+  height: auto;
   padding:30px 80px;
   color: #6f7c83;
 }
+
 .quicklink-body {
   text-align: left;
   font-weight: 500;
@@ -215,21 +243,24 @@ iframe {
   background: url('https://res.cloudinary.com/kinkidy/image/upload/v1592770665/daj/visa.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  height: 20rem;
+  background-position: center;
   width: 100%;
 }
 .ticket {
   background: url('https://res.cloudinary.com/kinkidy/image/upload/v1592780722/daj/Optimized-2c.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  height: 20rem;
+  background-position: center;
   width: 100%;
 }
 .get_in_touch {
   background: url('https://res.cloudinary.com/kinkidy/image/upload/v1592770664/daj/contact.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  height: 20rem;
+  background-position: center;
   width: 100%;
 }
 .content-static {
@@ -253,7 +284,7 @@ iframe {
 }
 .content-static-headings {
   text-align: center;
-  padding: 120px 25px;
+  padding: 7.5rem 1.5rem;
   border-radius: 5%;
   margin-right: -40px;
   height: auto;
@@ -270,18 +301,21 @@ iframe {
   color: #6f7c83;
   margin-top: 20px;
 }
+.content-static-headings a {
+  color: #6f7c83;
+}
 .discover {
   background-color: #0000fff1;
   border-radius: 5px 40px ;
-  padding: 100px 0;
-  margin-top: 100px ;
-  margin-bottom: 150px;
-  width: 95%;
+  padding: 6.25rem 5rem;
+  margin-top: 6.25rem ;
+  margin-bottom: 8.25rem;
+  width: 90%;
   text-align: center;
   letter-spacing: 0.05em;
   line-height: 1.7em;
   font-size: 18px;
-  color: #000000;
+  color: #f1f1f1;
 }
 .discover a {
   text-decoration: none;
@@ -322,100 +356,6 @@ input {
 .testimony {
   padding: 20px 0;
 }
-.partners {
-  width: 95%;
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
-}
-#exampleSlider {
-  position: relative;
-}
-@media (max-width: 767px) {
-  #exampleSlider {
-    border-color: transparent;
-  }
-}
-#exampleSlider .MS-content {
-  margin: 15px 5%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-@media (max-width: 767px) {
-  #exampleSlider .MS-content {
-    margin: 0;
-  }
-}
-#exampleSlider .MS-content .item {
-  display: inline-block;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  vertical-align: top;
-  border-right: none;
-  width: 20%;
-}
-.item img {
-  height: 80px;
-}
-
-@media (max-width: 1200px) {
-  #exampleSlider .MS-content .item {
-    width: 25%;
-  }
-}
-@media (max-width: 992px) {
-  #exampleSlider .MS-content .item {
-    width: 33.3333%;
-  }
-}
-@media (max-width: 767px) {
-  #exampleSlider .MS-content .item {
-    width: 50%;
-  }
-}
-#exampleSlider .MS-content .item p {
-  font-size: 30px;
-  text-align: center;
-  line-height: 1;
-  vertical-align: middle;
-  margin: 0;
-  padding: 10px 0;
-}
-#exampleSlider .MS-controls button {
-  position: absolute;
-  border: none;
-  background:transparent;
-  font-size: 15px;
-  outline: 0;
-  width: 4%;
-  border-radius: 50%;
-  box-shadow: none;
-  top: 25px;
-}
-@media (max-width: 767px) {
-  #exampleSlider .MS-controls button {
-    display: none;
-  }
-}
-#exampleSlider .MS-controls button:hover {
-  cursor: pointer;
-}
-#exampleSlider .MS-controls .MS-left {
-  left: 10px;
-}
-@media (max-width: 992px) {
-  #exampleSlider .MS-controls .MS-left {
-    left: -2px;
-  }
-}
-#exampleSlider .MS-controls .MS-right {
-  right: 10px;
-}
-@media (max-width: 992px) {
-  #exampleSlider .MS-controls .MS-right {
-    right: -2px;
-  }
-}
 .footer {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -438,4 +378,83 @@ input {
   border-top: 1px solid #e2e6e9;
   border-width: 60%;
   color:#657279;
+}
+
+
+/* Responsiveness  */
+@media screen and (max-width:450px) {
+  .mobile-quicklinks button {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .visa, .get_in_touch, .ticket {
+    height: 10rem;
+  }
+  .navbar-brand{
+    width: 80%;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .mobile-quicklinks {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #social-info a{
+    display: none;
+  }
+  .navbar-brand {
+    padding: .2rem 0 !important;
+  }
+  .logo img {
+    height: 3.4rem;
+  }
+  .quicklinks {
+    display: none;
+  }
+  .mobile-quicklinks .quicklink {
+    display: block;
+    height:auto;
+  }
+  .mobile-quicklinks button {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .quicklink-body {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .discover {
+    padding: 4.5rem 1rem;
+    font-size:0.9rem;
+    margin: 6rem auto 8rem;
+    width:80%
+  }
+  .content-static {
+    display: block;
+  }
+  .content-static-headings {
+    margin: 0 2rem 3rem;
+    display: block;
+  }
+  .content-static-img {
+    display: none;
+  }
+  .newsletter input {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .newsletter button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .content-static-headings {
+    padding: 6.5rem .5rem;
+    margin: 0 3rem;
+}
 }

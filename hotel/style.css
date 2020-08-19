@@ -91,24 +91,31 @@ a:hover {
 ul a {
   padding-left: 10px;
 }
-.navbar {
-  display: inline-block !important;
-  padding: 0 !important;
-}
-#navbar a:hover {
-  text-decoration: none !important;
-  color: #4e575c;
-} 
 #navbar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between; 
-  padding:0;
-  width:100%;
   background-color:  rgba(0, 0, 255);
 }
-#navbar a {
-  color:  #ffffff !important;
+.navbar {
+  padding: 0 !important;
+}
+.navbar button {
+  width: 10%;
+  border: none;
+  background-color:transparent;
+  margin-right: 1rem;
+}
+.navbar-toggler {
+  font-size: 1rem !important;
+}
+.navbar-toggler-icon {
+  height: .15rem !important;
+  width: 100% !important;
+  background-color: #eeeeee !important;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-expand-lg {
+  justify-content: space-between !important;
 }
 .logo, .menu  {
   display: flex;
@@ -120,6 +127,8 @@ ul a {
 }
 .logo img {
   height: 55px;
+  width: 100%;
+
 }
 .menu {
   padding-right: 50px;
@@ -501,4 +510,35 @@ input {
   border-top: 1px solid #e2e6e9;
   border-width: 60%;
   color:#657279;
+}
+
+/* Responsiveness  */
+@media screen and (max-width:550px) {
+  .navbar-brand{
+    width: 80%;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #social-info a{
+    display: none;
+  }
+  .navbar-brand {
+    padding: .2rem 0 !important;
+  }
+  .logo img {
+    height: 3.4rem;
+    margin: .5rem 0;
+  }
+  .hotel_content{
+    width: 70%;
+  }
+  .newsletter input {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .newsletter button {
+    width: 100%;
+  }
 }

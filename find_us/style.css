@@ -110,7 +110,7 @@ ul a {
    background-color:  rgba(0, 0, 255);
 }
 #navbar a {
-  color:  #d0d2d3 !important;
+  color:  #ffffff !important;
 }
 .logo, .menu  {
   display: flex;
@@ -181,17 +181,16 @@ ul a {
   margin: 0;
   padding-top: 0;
 }
-
 #top-info-content {
-    width: 45%;
-    padding: 100px 0 100px 260px; 
+  width: 45%;
+  padding: 100px 0 100px 260px; 
 }
 #top-info-content  h2{
-    font-size: 25px;
-    align-self: auto;
+  font-size: 25px;
+  align-self: auto;
 }
 #top-info-content .buttons {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 button {
   padding: 15px;
@@ -210,43 +209,136 @@ button {
   padding-top: 12rem;
 }
 .find_content {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: 32.5% 32.5% 32.5%;
+  margin-left:2.5rem;
 }
-.find_content_2 {
-  margin: 5rem auto 0;
-  background: rgba(255, 255, 255, 0.719);
-  padding: 5rem 3rem;
-  width: 60%;
-}
+
 .address, .email, .phone {
   color:#657279 ;
   background-color: #ffff;
   border: 1px solid #f5f5ff;
   font-size: 1rem;
   font-weight: 600;
-  width: 90%;
+  /* width: 90%; */
   height: 100%;
   padding: 1.5rem 3.5rem;
   text-align: initial;
   box-shadow:5px 2px 5px #c3c3c5 ;
   border-radius:4px
 }
-.address {
+/* .address {
   margin-left:2.5rem;
-}
-.phone {
+} */
+/* .phone {
   margin-right:2.5rem;
+} */
+.find_content_2 {
+  margin: 5rem auto 0;
+  background: rgba(255, 255, 255, 0.719);
+  padding: 5rem 3rem;
+  width: 60%;
 }
 .form-group {
   text-align: left !important;
+}
+
+form {
+  padding: 2.5rem 2rem;
+  margin-top: 2rem;
+  text-align: left;
+  border: 2px solid #e0dfdf;
+}
+.flight_form {
+  background: #ffffff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  padding: 0 !important;
+  width: 60%;
+  box-shadow: rgb(46, 46, 46);
+  color: #657279;
+  }
+.form_header_section {
+  display: flex;
+  min-width: 60%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5rem;
+}
+.form_row_header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  padding: 0 5rem;
+}
+.flight_form .form_header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+.flight_form .form_sub_header {
+  font-size: 0.8rem;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+.form-control {
+  font-size: 0.8rem;
+}
+.form_actions {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.form_actions .default_button {
+  margin: 3rem 0;
+  box-shadow: none;
+  outline: none;
+  border: 0;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: gray;
+  outline: 0;
+  box-shadow: none;
+}
+form button {
+  color: white;
+  font-weight: 600;
+    text-align: center !important;
+}
+.flight_form_footer {
+  min-width: 100%;
+  padding: 0.5rem;
+  background-color: #0b0146;
+  color: #fdffd6;
+  text-align: center;
+  font-size: 0.6rem;
+  margin-bottom: 5rem;
+}
+.form-row {
+  padding: 0 5rem;
+}
+
+/* form {
+  padding: 2.5rem 5rem;
+  margin-top: 2rem;
+  text-align: left;
+  border: 2px solid #e0dfdf;
 }
 form button {
   background-color:#48c2f7;
   color: #ffff;
   border: none;
+  text-align: center !important;
   box-shadow: none;
-}
+} */
 .newsletter {
   margin: 0 0 50px 0;
   padding: 50px 50px 30px 50px;
@@ -395,4 +487,28 @@ input {
     border-top: 1px solid #e2e6e9;
     border-width: 60%;
     color:#657279;
+}
+
+/* Responsiveness  */
+@media screen and (max-width: 1000px) {
+  #social-info a{
+    display: none;
+  }
+  .navbar-brand {
+    padding: .2rem 0 !important;
+  }
+  .logo img {
+    height: 3.4rem;
+    margin: .5rem 0;
+  }
+  .visa_content{
+    width: 70%;
+  }
+  .newsletter input {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .newsletter button {
+    width: 100%;
+  }
 }

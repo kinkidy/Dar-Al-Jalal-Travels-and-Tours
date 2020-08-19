@@ -2,24 +2,40 @@
 <html>
     <head>
         <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="google-site-verification" content="5U6wnrc9VXkSoCjvzu2JdZcP96nlqX72zkHQ_sY8Kck" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="./style.css" rel="stylesheet" type="text/css">
         <link href="./imgs.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+        <!-- Web manifest -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000ff">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#0000ff">
+
         <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type='text/javascript'></script> 
         <script type="text/javascript" src='https://www.travelstart.com.ng/resources/js/jquery.ba-postmessage.min.js'></script>
         <script type="text/javascript" src="./script.js"></script>
+
+        <!-- Service worker -->
+        <script src="./serviceWorker.js" type="javascript"></script>
+
     </head>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
@@ -38,7 +54,7 @@
     <body>
         <div id="container">
             <!--top content-->    
-            <nav class="navbar fixed-top navbar-expand-lg">
+            <div >
                 <div id="top-info">
                     <div id="social-info">
                         <div class="social-info-basic">
@@ -58,22 +74,30 @@
                     </div>
                 </div>
                 <div id="navbar">
-                    <div class="logo navbar-brand">
-                        <a class="navbar-brand" href="index.html"><img src="https://res.cloudinary.com/kinkidy/image/upload/v1593367049/daj/DAR.png"/></a>
-                    </div>
-                    <div class="menu collapse navbar-collapse">
-                        <ul>
-                            <li><a  class="active nav-list" href="./index.html">HOME</a></li>
-                            <li><a  class="nav-list" href="./visa/visa.html">Visa</a></li>
-                            <li><a class="nav-list" href="./hotel/hotel.html">Hotel</a></li>
-                            <li><a class="nav-list" href="./about/about.html">About</a></li>
-                            <li><a class="nav-list" href="./find_us/find_us.html">CONTACT</a></li>
-                          </ul>
-                    </div>
+                    <nav  class="navbar navbar-expand-lg">
+                        <div class=" navbar-brand">
+                            <a class="logo navbar-brand" href="index.html"><img src="https://res.cloudinary.com/kinkidy/image/upload/v1593367049/daj/DAR.png"/></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <span class="icon-bar navbar-toggler-icon"></span>
+                              <span class="icon-bar navbar-toggler-icon"></span>
+                              <span class="icon-bar navbar-toggler-icon"></span> 
+                        </button>
+                        <div class="menu collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a  class="nav-link nav-list" href="./index.html">HOME</a></li>
+                                <li><a  class="nav-list" href="./visa/visa.html">Visa</a></li>
+                                <li><a class="nav-list" href="./hotel/hotel.html">Hotel</a></li>
+                                <li><a class="nav-list" href="./about/about.html">About</a></li>
+                                <li><a class="nav-list" href="./find_us/find_us.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </div>
 
-            <!--seraching engine from travelstart-->
+            <!-- seraching engine from travelstart -->
             <div class="whitelabel">
                 <div id='logs' ></div> 
                 <iframe style="background-color:transparent;" id="travelstartIframe-338bb8dc-e151-4f3c-b143-02ae20a85074"             
@@ -112,11 +136,40 @@
                     </div>
                 </div>
 
+                <div class="mobile-quicklinks">
+                    <div class="quicklink">                        
+                        <div class="visa"></div>
+                        <div class="quicklink-body">
+                           <p>Our travel visa assistance experts conducts a comprehensive:
+                              Client profiling to ensure client is up-to-date with required documents,
+                              assist client to ensure a smooth visa application process</p>
+                            <button><a href="./visa/visa.html">Apply for Visa</a></button> 
+                        </div>
+                    </div>
+                    <div class="quicklink">
+                        <div class="get_in_touch"></div>
+                        <div class="quicklink-body">
+                           <p>Our team are always available to hear from you. We provide a 
+                               swift response to all complaints all round the clock. </p>
+                            <button><a href="./find_us/find_us.html">Get in Touch</a></button> 
+                        </div>
+                    </div>
+                    <div class="quicklink">                        
+                        <div class="ticket"></div>
+                        <div class="quicklink-body">
+                            <p>Stay on time with your ticket booking and hotel booking. 
+                                We assist in getting you all prepared and save you the hassle of booking flight and hotel. 
+                                We are reliable for ticket reservation and hotel booking </p>
+                            <button><a href="./hotel/hotel.html">Book a Ticket</a></button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="discover">
                     <h3>DISCOVER THE WORLD</h3>
                     <p>
-                        The world is diverse with roughly 6,500 spoken languages 195 countries to explore.<br>  
-                        Apply for a visa today and be enriched with various culture and heritage.<br> Dar-Al-Jalal
+                        The world is diverse with roughly 6,500 spoken languages 195 countries to explore.  
+                        Apply for a visa today and be enriched with various culture and heritage. Dar-Al-Jalal
                         can make this journey happen with ease.
                     </p>
                     <P>
@@ -141,7 +194,8 @@
                     <button type="submit">Subscribe</button><br>
                 </div>
                 
-                <div class="partners">
+                <!-- <div class="partners">
+                    <h2>Partner</h2>
                     <div id="exampleSlider">
                         <div class="MS-content">
                             <div class="item">
@@ -173,8 +227,13 @@
                             <button class="MS-left"><p><span class="entypo-left-open-big"></span></p></button>
                             <button class="MS-right"><span class="entypo-right-open-big"></span></i></button>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                    <!-- <div class="MS-content">
+                        <div class="item">
+                            <img src="https://res.cloudinary.com/kinkidy/image/upload/v1591312974/daj/travelstart.png">
+                        </div>
+                    </div> -->
+                <!-- </div> -->
             <div class="footer-end">
                 <span><p>Copyright © 2020 Travels & Tours. All Rights Reserved. Dar-Al-Jalal</p></span>
                 <div class="social-info-icon">
