@@ -93,7 +93,7 @@ ul a {
 .social-info-basic ul:first-of-type{
   padding-right: 10px;
 }
-.navbar {
+/* .navbar {
   display: inline-block !important;
   padding: 0 !important;
 }
@@ -111,6 +111,35 @@ ul a {
 }
 #navbar a {
   color:  #ffffff !important;
+} */
+#navbar {
+  background-color:  rgba(0, 0, 255);
+}
+.navbar {
+  padding: 0 !important;
+}
+.navbar button {
+  width: 10%;
+  border: none;
+  background-color:transparent;
+  margin-right: 1rem;
+}
+.navbar-toggler {
+  font-size: 1rem !important;
+}
+.navbar-toggler-icon {
+  height: .15rem !important;
+  width: 100% !important;
+  background-color: #eeeeee !important;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-expand-lg {
+  justify-content: space-between !important;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 .logo, .menu  {
   display: flex;
@@ -158,6 +187,7 @@ ul a {
 }
 .logo img {
   height: 55px;
+  width: 100%;
 }
 .menu {
   justify-content: right !important ;
@@ -210,8 +240,11 @@ button {
 }
 .find_content {
   display: grid;
-  grid-template-columns: 32.5% 32.5% 32.5%;
-  margin-left:2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap:1.5rem;
+  row-gap: 5rem;
+  justify-content: center;
+  justify-items: center;
 }
 
 .address, .email, .phone {
@@ -220,7 +253,7 @@ button {
   border: 1px solid #f5f5ff;
   font-size: 1rem;
   font-weight: 600;
-  /* width: 90%; */
+  width: 90%;
   height: 100%;
   padding: 1.5rem 3.5rem;
   text-align: initial;
@@ -403,66 +436,6 @@ input {
   .item img {
     height: 80px;
   }
-  
-  @media (max-width: 1200px) {
-    #exampleSlider .MS-content .item {
-      width: 25%;
-    }
-  }
-  @media (max-width: 992px) {
-    #exampleSlider .MS-content .item {
-      width: 33.3333%;
-    }
-  }
-  @media (max-width: 767px) {
-    #exampleSlider .MS-content .item {
-      width: 50%;
-    }
-  }
-  #exampleSlider .MS-content .item p {
-    font-size: 30px;
-    text-align: center;
-    line-height: 1;
-    vertical-align: middle;
-    margin: 0;
-    padding: 10px 0;
-  }
-  #exampleSlider .MS-controls button {
-    position: absolute;
-    border: none;
-    background:transparent;
-    font-size: 15px;
-    outline: 0;
-    width: 4%;
-    border-radius: 50%;
-    box-shadow: none;
-    top: 25px;
-  }
-  @media (max-width: 767px) {
-    #exampleSlider .MS-controls button {
-      display: none;
-    }
-  }
-  #exampleSlider .MS-controls button:hover {
-    cursor: pointer;
-  }
-  #exampleSlider .MS-controls .MS-left {
-    left: 10px;
-  }
-  @media (max-width: 992px) {
-    #exampleSlider .MS-controls .MS-left {
-      left: -2px;
-    }
-  }
-  #exampleSlider .MS-controls .MS-right {
-    right: 10px;
-  }
-  @media (max-width: 992px) {
-    #exampleSlider .MS-controls .MS-right {
-      right: -2px;
-    }
-  }
-
 .footer {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -490,6 +463,29 @@ input {
 }
 
 /* Responsiveness  */
+@media screen and (max-width:550px) {
+  #content {
+    padding-top: 5rem;
+  }
+  .navbar-brand{
+    width: 85%;
+    margin: 0 !important;
+  }
+  .flight_form{
+    width: 85%;
+  }
+  form {
+    padding: 0;
+  }
+  form button {
+    width: 80%;
+  }
+}
+@media screen and (max-width:990px){
+  .menu{
+    padding-right: 0 !important;
+  }
+}
 @media screen and (max-width: 1000px) {
   #social-info a{
     display: none;
@@ -499,7 +495,7 @@ input {
   }
   .logo img {
     height: 3.4rem;
-    margin: .5rem 0;
+    margin: 0;
   }
   .visa_content{
     width: 70%;

@@ -286,6 +286,12 @@ form button {
 .form-row {
   padding: 0 5rem;
 }
+input:invalid {
+  border: 1px solid red;
+}
+input:valid {
+  border: 1px solid rgb(122, 248, 122);
+}
 .bottom_header {
   text-align: center;
   padding: 10px ;
@@ -418,11 +424,36 @@ input {
     width: 100%;
   }
   .navbar-brand{
-    width: 80%;
+    width: 85%;
     margin: 0 !important;
   }
+  .flight_form {
+    width: 85%;
+  }
+  .form-row{
+    padding: 0 2rem;
+  }
+  form button {
+    width: 80%;
+  }
 }
-
+@media screen and (max-width:990px){
+  .menu{
+    padding-right: 0 !important;
+  }
+  .menu li {
+    margin-bottom: .8rem;
+  }
+  .menu li a {
+    padding: 16px 52px;
+  }
+  .navbar-nav .nav-link{
+    padding: 16px 52px !important;
+  }
+  ul:last-child{
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   #social-info a{
     display: none;
@@ -442,5 +473,10 @@ input {
   }
   .newsletter button {
     width: 100%;
+  }
+}
+@media screen and (max-width:1300px) {
+  .menu {
+    padding-right: 0;
   }
 }

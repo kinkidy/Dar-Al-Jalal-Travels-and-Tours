@@ -387,17 +387,32 @@ input {
     width: 90% !important;
   }
 }
-
 @media screen and (max-width:550px) {
   .visa, .get_in_touch, .ticket {
     height: 10rem;
   }
   .navbar-brand{
-    width: 80%;
+    width: 85%;
     margin: 0 !important;
   }
 }
-
+@media screen and (max-width:990px){
+  .menu{
+    padding-right: 0 !important;
+  }
+  .menu li {
+    margin-bottom: .8rem;
+  }
+  .menu li a {
+    padding: 16px 52px;
+  }
+  .navbar-nav .nav-link{
+    padding: 16px 52px !important;
+  }
+  ul:last-child{
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (min-width:1000px) {
   .mobile-quicklinks {
     display: none;

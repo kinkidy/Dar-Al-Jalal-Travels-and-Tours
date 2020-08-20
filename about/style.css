@@ -239,13 +239,8 @@ button {
 }
 #content {
   text-align: center;
-  /* background-image: url('https://res.cloudinary.com/kinkidy/image/upload/v1591312961/daj/about.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: #ffffff;
   padding: 10rem 10rem;
-  /* margin: 0 auto; */
 }
 .about {
   color: #657279;
@@ -255,7 +250,7 @@ button {
     margin: 0 0 0 -7rem;
     background: #f3f0f0d8;
     padding: 2rem 3rem;
-    width: 60%;
+    width: 55%;
     border-radius:8px;
     box-shadow:5px 10px 10px #b9b9b9;
 }
@@ -266,7 +261,7 @@ button {
   margin: -20rem 0 0 33.5rem;
   background: #f3f0f0d8;
   padding: 2rem 3rem;
-  width: 60%;
+  width: 55%;
   border-radius:8px;
   box-shadow:5px 10px 10px #cecdcd;
 }
@@ -306,43 +301,9 @@ input {
   margin-bottom: 10px;
   text-shadow: 1px 1px 1px rgba(0,0,0,.01);
 }
-.partners {
-    width: 95%;
-    margin-top: 60px !important;
-    margin-bottom: 60px !important;
+.item img {
+  height: 80px;
 }
-
- #exampleSlider {
-    position: relative;
-  }
-  @media (max-width: 767px) {
-    #exampleSlider {
-      border-color: transparent;
-    }
-  }
-  #exampleSlider .MS-content {
-    margin: 15px 5%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  @media (max-width: 767px) {
-    #exampleSlider .MS-content {
-      margin: 0;
-    }
-  }
-  #exampleSlider .MS-content .item {
-    display: inline-block;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    vertical-align: top;
-    border-right: none;
-    width: 20%;
-  }
-
-  .item img {
-    height: 80px;
-  }
 .footer {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -372,28 +333,27 @@ input {
 /* Responsiveness  */
 @media screen and (max-width:550px) {
   #content {
-    padding: 5rem;
+    padding: 5rem 0;
   }
   .navbar-brand{
     width: 80%;
     margin: 0 !important;
   }
+  .about_content, .about_content_2 {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1160px) {
-  #content {
-    padding:10rem 0;
-  }
+
   .about_content {
     margin: auto;
   }
   .about_content_2 {
     margin: 5rem auto;
   }
-}
-@media screen and (min-width: 1300px) {
-  .about_content_2 {
-    margin: -20rem 0 0 30rem;
+  .about_content, .about_content_2 {
+    width: 75%;
   }
 }
 @media screen and (max-width: 1000px) {

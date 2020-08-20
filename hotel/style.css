@@ -128,7 +128,6 @@ ul a {
 .logo img {
   height: 55px;
   width: 100%;
-
 }
 .menu {
   padding-right: 50px;
@@ -514,12 +513,40 @@ input {
 
 /* Responsiveness  */
 @media screen and (max-width:550px) {
+  #content{
+    padding-top: 5rem;
+  }
   .navbar-brand{
-    width: 80%;
+    width: 85%;
     margin: 0 !important;
   }
+  .flight_form {
+    width: 85%;
+  }
+  .form-row{
+    padding: 0 2rem;
+  }
+  form button {
+    width: 80%;
+  }
 }
-
+@media screen and (max-width:990px){
+  .menu{
+    padding-right: 0 !important;
+  }
+  .menu li {
+    margin-bottom: .8rem;
+  }
+  .menu li a {
+    padding: 16px 52px;
+  }
+  .navbar-nav .nav-link{
+    padding: 16px 52px !important;
+  }
+  ul:last-child{
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (max-width: 1000px) {
   #social-info a{
     display: none;
@@ -529,7 +556,6 @@ input {
   }
   .logo img {
     height: 3.4rem;
-    margin: .5rem 0;
   }
   .hotel_content{
     width: 70%;
