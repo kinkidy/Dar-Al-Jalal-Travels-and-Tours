@@ -135,15 +135,14 @@ ul{
   height: 55px;
   width: 100%;
 }
-.menu {
+/* .menu {
   justify-content: right !important ;
-}
-.menu a {
+} */
+/* .menu a {
   margin: 0;
   padding: 3rem;
-}
+} */
 .menu {
-  padding-right: 50px;
   font-weight: 600;
 }
 .menu a{
@@ -208,10 +207,10 @@ button {
   height: 35rem;
 }
 .banner {
-    background-color:#0000ffd8;
-    height: 35rem;
-    opacity: 0.3;
-    position: relative;
+  background-color:#0000ffd8;
+  height: 35rem;
+  opacity: 0.3;
+  position: relative;
 }
 .banner button {
   position: absolute;
@@ -225,7 +224,6 @@ button {
 }
 .banner {
   text-align: center;
-  /* padding-top: 10%; */
 }
 .button {
   font-family: "Open Sans", sans-serif;
@@ -279,7 +277,6 @@ button {
   text-align: center;
   color: #657279;
 }
-
 .newsletter input {
   padding: 12px 0;
   border: solid 1px rgba(170, 168, 168, 0.712);
@@ -305,31 +302,28 @@ input {
   height: 80px;
 }
 .footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: auto;
-    padding: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  padding: 50px;
 }
-
 .footer-link {
-    height: auto;
-    width: 300px;
-    padding: 30px;
-    border: solid 1px rgb(36, 36, 36);
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px 10px rgba(97, 97, 97, 0.123);
+  height: auto;
+  width: 300px;
+  padding: 30px;
+  border: solid 1px rgb(36, 36, 36);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 10px rgba(97, 97, 97, 0.123);
 }
-
 .footer-end {
-    background-color: rgb(255, 255, 255);
-    padding: 25px;
-    width:60%;
-    text-align: center;
-    border-top: 1px solid #e2e6e9;
-    border-width: 60%;
-    color:#657279;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  width:60%;
+  text-align: center;
+  border-top: 1px solid #e2e6e9;
+  border-width: 60%;
+  color:#657279;
 }
-
 /* Responsiveness  */
 @media screen and (max-width:550px) {
   #content {
@@ -343,9 +337,12 @@ input {
     width: 85%;
   }
 }
-
+@media screen and (max-width:990px){
+  .menu li a {
+    padding: 16px 52px;
+  }
+}
 @media screen and (max-width: 1160px) {
-
   .about_content {
     margin: auto;
   }

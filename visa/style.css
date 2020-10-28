@@ -78,7 +78,7 @@ ul{
   background-repeat: no-repeat;
   background-size: cover; */
   background-color: #fff;
-  padding-top: 13rem;
+  padding-top: 5.5rem;
 }
 #social-info {
   display: flex;
@@ -312,7 +312,12 @@ input:valid {
   justify-content: space-between;
   margin: 5rem 0;
 }
-
+form .btn{
+  display: none !important;
+}
+.form-control{
+  padding: 0 !important;
+}
 .content-static {
   display: flex;
   flex-flow: row nowrap;

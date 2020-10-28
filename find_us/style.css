@@ -236,7 +236,11 @@ button {
 #content {
   text-align: center;
   background-color: #ffffff;
-  padding-top: 12rem;
+  padding-top: 5.5rem;
+}
+#content h1 {
+  color: #657279;
+  margin-bottom: 3rem;
 }
 .find_content {
   display: grid;
@@ -358,20 +362,6 @@ form button {
 .form-row {
   padding: 0 5rem;
 }
-
-/* form {
-  padding: 2.5rem 5rem;
-  margin-top: 2rem;
-  text-align: left;
-  border: 2px solid #e0dfdf;
-}
-form button {
-  background-color:#48c2f7;
-  color: #ffff;
-  border: none;
-  text-align: center !important;
-  box-shadow: none;
-} */
 .newsletter {
   margin: 0 0 50px 0;
   padding: 50px 50px 30px 50px;
@@ -432,7 +422,6 @@ input {
     border-right: none;
     width: 20%;
   }
-
   .item img {
     height: 80px;
   }
@@ -444,24 +433,22 @@ input {
 }
 
 .footer-link {
-    height: auto;
-    width: 300px;
-    padding: 30px;
-    border: solid 1px rgb(36, 36, 36);
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px 10px rgba(97, 97, 97, 0.123);
+  height: auto;
+  width: 300px;
+  padding: 30px;
+  border: solid 1px rgb(36, 36, 36);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 10px rgba(97, 97, 97, 0.123);
 }
-
 .footer-end {
-    background-color: rgb(255, 255, 255);
-    padding: 25px;
-    width:60%;
-    text-align: center;
-    border-top: 1px solid #e2e6e9;
-    border-width: 60%;
-    color:#657279;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  width:60%;
+  text-align: center;
+  border-top: 1px solid #e2e6e9;
+  border-width: 60%;
+  color:#657279;
 }
-
 /* Responsiveness  */
 @media screen and (max-width:550px) {
   #content {
@@ -485,6 +472,9 @@ input {
   .menu{
     padding-right: 0 !important;
   }
+  .menu li a {
+    padding: 16px 52px;
+  }  
 }
 @media screen and (max-width: 1000px) {
   #social-info a{

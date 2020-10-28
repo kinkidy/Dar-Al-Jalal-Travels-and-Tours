@@ -96,7 +96,7 @@ ul a {
 .social-info-basic ul:first-of-type{
   padding-right: 10px;
 }
-#navbar {
+/* #navbar {
   background-color:  rgba(0, 0, 255);
 }
 .navbar {
@@ -137,6 +137,44 @@ ul a {
 .logo img {
     height: 55px;
     width: 100%;
+} */
+#navbar {
+  background-color:  rgba(0, 0, 255);
+}
+.navbar {
+  padding: 0 !important;
+}
+.navbar button {
+  width: 10%;
+  border: none;
+  background-color:transparent;
+  margin-right: 1rem;
+}
+.navbar-toggler {
+  font-size: 1rem !important;
+}
+.navbar-toggler-icon {
+  height: .15rem !important;
+  width: 100% !important;
+  background-color: #eeeeee !important;
+}
+.navbar-brand {
+  margin-left: 0 !important;
+}
+.navbar-expand-lg {
+  justify-content: space-between !important;
+}
+.logo, .menu  {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 !important;
+}
+.logo {
+  padding-left: 50px;
+}
+.logo img {
+  height: 55px;
+  width: 100%;
 }
 .menu {
   padding-right: 50px;
